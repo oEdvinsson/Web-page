@@ -5,6 +5,7 @@ html, body {
     display: flex;
 }
 
+
 * {
   margin: 0;
 }
@@ -13,7 +14,7 @@ html, body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px;
+    width: 15%;
     background-color: #f8f8f8;
     padding: 20px;
     height: 100%;
@@ -29,6 +30,14 @@ html, body {
   .sidenav a:hover {
     background-color: #e8e8e8;
     color: #000;
+  }
+
+  .container2 {
+    display: block; /* Set the display property to flex */
+    height: 100%;
+    width: 85%;
+    left: 20%;
+    position: absolute;
   }
 
 footer {
@@ -56,8 +65,9 @@ footer {
   }
   
   .content {
-    flex: 1;
-    /* Add your content styles here */
+    flex: 1 0 auto;
+    overflow-y: auto; /* Enable vertical scrolling for content */
+    padding-right: 20px; /* Add some space to accommodate the sidebar */
   }
 
   .footer {
